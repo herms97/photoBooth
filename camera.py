@@ -348,8 +348,8 @@ def TakePictures():
         # Save it to the usb drive
         bgimage.save(Final_Image_Name)
         # Save a temp file, its faster to print from the pi than usb
-        bgimage.save('/home/pi/Desktop/hei.jpg')
-        ShowPicture('/home/pi/Desktop/hei.jpg',3)
+        bgimage.save('/home/pi/Desktop/tempprint.jpg')
+        ShowPicture('/home/pi/Desktop/tempprint.jpg',3)
         bgimage2 = bgimage.rotate(90)
         time.sleep(1)
                 
