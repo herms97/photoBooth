@@ -264,10 +264,8 @@ def CapturePicture():
         global pygame
         global ImageShowed
         global CountDownPhoto
-	global BackgroundColor
-
+	global BackgroundColor	
 	
-        
 	BackgroundColor = ""
 	Numeral = ""
         Message = ""
@@ -351,8 +349,9 @@ def TakePictures():
         bgimage.save('/home/pi/Desktop/tempprint.jpg')
         ShowPicture('/home/pi/Desktop/tempprint.jpg',3)
         bgimage2 = bgimage.rotate(90)
-        time.sleep(1)
-                
+        bgimage2.save('/home/pi/Desktop/tempprint.jpg')
+        ImageShowed = False
+       
         Message = ""
         Numeral = ""
         ImageShowed = False
