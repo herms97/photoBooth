@@ -5,6 +5,7 @@ import os
 import PIL.Image
 import cups
 import RPi.GPIO as GPIO
+import uuid #make an unique identifier for file name
 
 from threading import Thread
 from pygame.locals import *
@@ -31,6 +32,7 @@ BUTTON_PIN = 25
 #IMAGE_HEIGHT = 374
 IMAGE_WIDTH = 550
 IMAGE_HEIGHT = 360
+img_name_id = str(uuid.uuid4())
 
 
 # Load the background template
@@ -86,11 +88,11 @@ def input(events):
                 (event.type == KEYDOWN and event.key == K_ESCAPE)):
             pygame.quit()
 
-			
+            
 # set variables to properly display the image on screen at right ratio
 def set_demensions(img_w, img_h):
-	# Note this only works when in booting in desktop mode. 
-	# When running in terminal, the size is not correct (it displays small). Why?
+    # Note this only works when in booting in desktop mode. 
+    # When running in terminal, the size is not correct (it displays small). Why?
 
     # connect to global vars
     global transform_y, transform_x, offset_y, offset_x
@@ -128,13 +130,13 @@ def InitFolder():
     Message = ''
 
     #check image folder existing, create if not exists
-    if not os.path.isdir(imagefolder):	
-        os.makedirs(imagefolder)	
+    if not os.path.isdir(imagefolder):  
+        os.makedirs(imagefolder)    
             
     imagefolder2 = os.path.join(imagefolder, 'images')
     if not os.path.isdir(imagefolder2):
         os.makedirs(imagefolder2)
-		
+        
 def DisplayText(fontSize, textToDisplay):
     global Numeral
     global Message
@@ -160,7 +162,7 @@ def DisplayText(fontSize, textToDisplay):
                     backgroundPicture.blit(text, textpos)
             else:
                     background.blit(text, textpos)
-				
+                
 def UpdateDisplay():
     # init global variables from main thread
     global Numeral
@@ -218,9 +220,9 @@ def UpdateDisplay():
                     background.blit(text, textpos)
     
     if(ImageShowed == True):
-    	screenPicture.blit(backgroundPicture, (0, 0))   	
+        screenPicture.blit(backgroundPicture, (0, 0))       
     else:
-    	screen.blit(background, (0, 0))
+        screen.blit(background, (0, 0))
    
     pygame.display.flip()
     return
@@ -240,17 +242,17 @@ def ShowPicture(file, delay):
     pygame.display.flip()  # update the display
     ImageShowed = True
     time.sleep(delay)
-	
+    
 # display one image on screen
-def show_image(image_path):	
-	screen.fill(pygame.Color("white")) # clear the screen	
-	img = pygame.image.load(image_path) # load the image
-	img = img.convert()	
-	set_demensions(img.get_width(), img.get_height()) # set pixel dimensions based on image	
-	x = (infoObject.current_w / 2) - (img.get_width() / 2)
-	y = (infoObject.current_h / 2) - (img.get_height() / 2)
-	screen.blit(img,(x,y))
-	pygame.display.flip()
+def show_image(image_path): 
+    screen.fill(pygame.Color("white")) # clear the screen   
+    img = pygame.image.load(image_path) # load the image
+    img = img.convert() 
+    set_demensions(img.get_width(), img.get_height()) # set pixel dimensions based on image 
+    x = (infoObject.current_w / 2) - (img.get_width() / 2)
+    y = (infoObject.current_h / 2) - (img.get_height() / 2)
+    screen.blit(img,(x,y))
+    pygame.display.flip()
 
 def CapturePicture():
         global imagecounter
@@ -264,30 +266,33 @@ def CapturePicture():
         global pygame
         global ImageShowed
         global CountDownPhoto
-	global BackgroundColor	
-	
-	BackgroundColor = ""
-	Numeral = ""
+        global BackgroundColor
+        
+        BackgroundColor = ""
+        Numeral = ""
         Message = ""
-	UpdateDisplay()
-	time.sleep(1)
-	CountDownPhoto = ""
-	UpdateDisplay()
-	background.fill(pygame.Color("black"))
-	screen.blit(background, (0, 0))
-	pygame.display.flip()
-	camera.start_preview()
-	BackgroundColor = "black"
+        UpdateDisplay()
+        time.sleep(1)
+        CountDownPhoto = ""
+        UpdateDisplay()
+        background.fill(pygame.Color("black"))
+        screen.blit(background, (0, 0))
+        pygame.display.flip()
+        camera.start_preview()
+        BackgroundColor = "black"
 
-	for x in range(3, -1, -1):
-                if x == 0:                        
+        for x in range(3, -1, -1):
+            if x == 0:                        
                         Numeral = ""
-                        Message = "PRENEZ LA POSE"
-                else:                        
+                        Message = "GET READY"
+            else:                        
                         Numeral = str(x)
                         Message = ""                
-                UpdateDisplay()
-                time.sleep(1)
+                        UpdateDisplay()
+                        time.sleep(1)
+                
+                
+
 
         BackgroundColor = ""
         Numeral = ""
@@ -302,7 +307,7 @@ def CapturePicture():
         ImageShowed = False
         return filename
     
-	
+    
 def TakePictures():
         global imagecounter
         global imagefolder
@@ -313,10 +318,10 @@ def TakePictures():
         global pygame
         global ImageShowed
         global CountDownPhoto
-	global BackgroundColor
-	global Printing
-	global PhotosPerCart
-	global TotalImageCount
+        global BackgroundColor
+        global Printing
+        global PhotosPerCart
+        global TotalImageCount
 
         input(pygame.event.get())
         CountDownPhoto = "1/3"        
@@ -329,28 +334,35 @@ def TakePictures():
         filename3 = CapturePicture()
 
         CountDownPhoto = ""
-        Message = "Attendez svp..."
+        Message = "Please wait..."
         UpdateDisplay()
 
         image1 = PIL.Image.open(filename1)
         image2 = PIL.Image.open(filename2)
         image3 = PIL.Image.open(filename3)   
         TotalImageCount = TotalImageCount + 1
-	
+    
         bgimage.paste(image1, (625, 30))
         bgimage.paste(image2, (625, 410))
         bgimage.paste(image3, (55, 410))
         # Create the final filename
         ts = time.time()
-        Final_Image_Name = os.path.join(imagefolder, "Final_" + str(TotalImageCount)+"_"+str(ts) + ".jpg")
+        #Final_Image_Name = os.path.join(imagefolder, "Final_" + str(TotalImageCount)+"_"+str(ts) + ".jpg")
         # Save it to the usb drive
-        bgimage.save(Final_Image_Name)
+        #bgimage.save(Final_Image_Name)
         # Save a temp file, its faster to print from the pi than usb
-        bgimage.save('/home/pi/Desktop/tempprint.jpg')
-        ShowPicture('/home/pi/Desktop/tempprint.jpg',3)
-        bgimage2 = bgimage.rotate(90)
-        bgimage2.save('/home/pi/Desktop/tempprint.jpg')
+        
+        
+        
+        #Auto upload to dropbox
+        bgimage.save('/home/pi/Dropbox-Uploader/tempprint'+img_name_id+'.jpg')
+        ShowPicture('/home/pi/Dropbox-Uploader/tempprint' +img_name_id+'.jpg',3)
+        bgimage2 = bgimage.rotate(0)
+        bgimage2.save('/home/pi/Dropbox-Uploader/tempprint'+img_name_id+'.jpg')
         ImageShowed = False
+        Dropbox_var = '/home/pi/Dropbox-Uploader/tempprint'+img_name_id+'.jpg'
+        command = '/home/pi/Dropbox-Uploader/dropbox_uploader.sh upload ' +  Dropbox_var + ' /Apps/PythonUploader/'
+        os.system(command)
        
         Message = ""
         Numeral = ""
@@ -362,7 +374,7 @@ def MyCallback(channel):
     global Printing
     GPIO.remove_event_detect(BUTTON_PIN)
     Printing=True
-	
+    
 def WaitForPrintingEvent():
     global BackgroundColor
     global Numeral
@@ -376,8 +388,8 @@ def WaitForPrintingEvent():
     while Printing == False and countDown > 0:
         if(Printing == True):
             return
-        for event in pygame.event.get():			
-            if event.type == pygame.KEYDOWN:				
+        for event in pygame.event.get():            
+            if event.type == pygame.KEYDOWN:                
                 if event.key == pygame.K_DOWN:
                     GPIO.remove_event_detect(BUTTON_PIN)
                     Printing = True
@@ -391,7 +403,7 @@ def WaitForPrintingEvent():
 
     GPIO.remove_event_detect(BUTTON_PIN)
         
-	
+    
 def WaitForEvent():
     global pygame
     NotEvent = True
@@ -408,6 +420,7 @@ def WaitForEvent():
                             NotEvent = False
                             return
             time.sleep(0.2)
+                            
 
 def main(threadName, *args):
     InitFolder()
