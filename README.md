@@ -12,8 +12,8 @@
 
 1. [Hardware](#hardware)
 2. [Software](#Software)
-3. [installation](#installation)
-4. [setup](setup)
+3. [Installation](#Installation)
+4. [Setup](#Setup)
 5. [Licens](#Licens)
 6. [Contribute](#Contribute)
 
@@ -64,7 +64,7 @@ directly down to [setup](setup)
     sudo apt-get install python3 
     
     
-   ## setup
+   ## Setup
    
    1. Start the setup with downloading the repository from github: https://github.com/herms97/photoBooth
   
