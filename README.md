@@ -14,7 +14,7 @@
 2. [Software](#Software)
 3. [Installation](#Installation)
 4. [Setup](#Setup)
-5. [Licens](#Licens)
+5. [License](#Licens)
 6. [Contribute](#Contribute)
 
 ## Hardware
