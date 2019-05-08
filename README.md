@@ -61,10 +61,19 @@ directly down to [setup](setup)
   4. Python
     Download Python by typing the following into the command line:
     sudo apt-get update
-    sudo apt-get install python3
+    sudo apt-get install python3 
     
-    ## Setup
-    Start the setup with downloading the repository from github: https://github.com/herms97/photoBooth
+    
+   ## setup
+   
+   1. Start the setup with downloading the repository from github: https://github.com/herms97/photoBooth
+  
+   2. Set up your dropbox account
+    2.1 First step is to create an account at DropBox - you do not have to pay for an account, do not worry. 
+    2.2 Second step is to locate the folder called ‘dropbox-uploader’ that should be included when pulling / cloning from our github.
+        Note: You may have pulled or cloned the project to a specific folder, make sure when changing directory that you know where the           dropbox-uploader is located.
+        Go into cmd (command window) and type:
+
     
 
 
