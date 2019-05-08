@@ -70,14 +70,16 @@ directly down to [setup](setup)
   
    2. Set up your dropbox account
    
-     2.1 First step is to create an account at DropBox - you do not have to pay for an account, do not worry. 
-     2.2 Second step is to locate the folder called ‘dropbox-uploader’ that should be included when pulling / cloning from our github.
+   First step is to create an account at DropBox - you do not have to pay for an account, do not worry. 
+   
+   Second step is to locate the folder called ‘dropbox-uploader’ that should be included when pulling / cloning from our github.
         Note: You may have pulled or cloned the project to a specific folder, make sure when changing directory that you know where the           dropbox-uploader is located.
         Go into cmd (command window) and type:
         
 1. cd dropbox-uploader 
 2. LS
-    (the command ls, will list files in the folder you are located. You do not have to do this, but you will then see that the script         dropbox_uploader.sh is inside the folder dropbox_uploader).
+
+   (the command ls, will list files in the folder you are located. You do not have to do this, but you will then see that the script         dropbox_uploader.sh is inside the folder dropbox_uploader).
 
     Simply run the script by typing: ./dropbox_uploader.sh
     
