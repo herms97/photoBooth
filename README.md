@@ -64,31 +64,68 @@ directly down to [setup](setup)
     sudo apt-get install python3 
     
     
-   ## Setup
+## Setup
    
-   1. Start the setup with downloading the repository from github: https://github.com/herms97/photoBooth
-  
-   2. Set up your dropbox account
+1. Start the setup with pulling / cloning the repository from github: https://github.com/herms97/photoBooth
    
-   First step is to create an account at DropBox - you do not have to pay for an account, do not worry. 
-   
-   Second step is to locate the folder called ‘dropbox-uploader’ that should be included when pulling / cloning from our github.
-        Note: You may have pulled or cloned the project to a specific folder, make sure when changing directory that you know where the           dropbox-uploader is located.
-        Go into cmd (command window) and type:
+2. Locate the folder called ‘dropbox-uploader’ that should be included when pulling / cloning from our github.
+   ### Note: 
+   You may have pulled or cloned the project to a specific folder, make sure when changing directory that you        know where the dropbox-uploader is located.
+      
+   Go into cmd (command window) and type:
         
-1. cd dropbox-uploader 
-2. LS
+   `cd dropbox-uploader`
+      
+   `ls`
 
-   (the command ls, will list files in the folder you are located. You do not have to do this, but you will then see that the script         dropbox_uploader.sh is inside the folder dropbox_uploader).
+   (The command ls, will list files in the folder you are located. You do not have to do this, but you will           then see that the script dropbox_uploader.sh is inside the folder dropbox_uploader).
 
-    Simply run the script by typing: ./dropbox_uploader.sh
+   Simply run the script by typing: 
+      
+    `./dropbox_uploader.sh`
     
-     If this dont work, type: chmod +x dropbox_uploader.sh
+    If this dont work, type:
+      
+    `chmod +x dropbox_uploader.sh`
      
-     This will allow you (give permission) to execute the file.
-     
-  
-  
+    This will allow you (give permission) to execute the file.
+      
+    First time executing the shell script will give you this:
+      
+    --link
+    
+3. You need to create an account at DropBox - you do not have to pay for an account, do not worry.
+
+4. Now you have to create an app, where you can get an access token (connect your dropbox app folder to the          script). Click here to create dropbox app
+
+5. Click create app, and fill out:
+
+   --link
+   --link
+   
+6.  When you have given a name and created your app, you should be able to see this when you scroll down:
+    
+    --link
+    
+    Click on the generate button, then your access token will be displayed.
+    
+    --link
+    
+7.  Type in the generated access token in the input field, hit enter, then type y and enter again to confirm:
+    
+    --link
+    
+    ### If you entered the correct token you are done setting up your dropbox!
+    
+    If you unfortunately entered wrong token, you can simply run the script `./dropbox_uploader.sh` again, then       this will show up:
+
+    --link
+    
+    It will list several commands, make sure you type `./dropbox_uploader.sh unlink`. Then you will get this         message: make sure to type `y` (if you want to reset) then hit enter. Now if you type `./dropbox_uploader.sh`     you will see the same as shown in the previous picture. Just make sure to type in the correct access token.
+    
+    ### Note:
+    Your folder names might not be the same as the path in our code, follow next step beneath to be sure.
+    
 ## License
 Collection of licenses that applies to this project.
 
