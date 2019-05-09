@@ -65,6 +65,8 @@ directly down to [setup](setup)
     
     
 ## Setup
+
+#### Dropbox
    
 1. Start the setup with pulling / cloning the repository from github: https://github.com/herms97/photoBooth
    
@@ -126,6 +128,28 @@ directly down to [setup](setup)
     ### Note:
     Your folder names might not be the same as the path in our code, follow next step beneath to be sure.
     
+#### choose folder where your images should be uploaded
+
+1. To upload images to your wanted folder, open up the python file camera.py included in the photoBooth folder.
+
+   --link
+   
+2. Scroll down to line 364, as you can see on the left side. If code-line option is not turned on, press `ctrl+f`    on windows or `cmd+f` on mac to open up the search bar inside your IDE and simply enter `command`. 
+
+   --link
+  
+   You should then easy locate this line of code:
+  
+   --link
+
+3. On line 364, as seen in the screenshot from our code, you can see behind `+ Dropbox_var +` the folder for        where the image is uploaded to the dropbox. In our code we have `/Apps/PythonUploader/` because this is the      folder where we wanted to upload our pictures.
+
+   You just have to change this to your desired path, and now you are done.
+   
+   ### Note:
+   The program will run an exception if the path to your folder includes typos, or foloder do not exist. It is      also case sensitive so remember to type the path correctly.
+   
+   
 ## License
 Collection of licenses that applies to this project.
 
