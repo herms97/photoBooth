@@ -10,12 +10,22 @@
 
 ## Table of Contents
 
-1. [Hardware](#hardware)
-2. [Software](#Software)
-3. [Installation](#Installation)
-4. [Setup](#Setup)
-5. [License](#License)
-6. [Contribute](#Contribute)
+1. [Intent](#Intent)
+2. [Hardware](#hardware)
+3. [Software](#Software)
+4. [Installation](#Installation)
+5. [Setup](#Setup)
+6. [License](#License)
+7. [Contribute](#Contribute)
+
+
+## Intent:
+  Our intention with this project is to make a fun and easy to learn/use program that will drive more young people into the open source  
+  community and hopefully will draw new developers into open source. PhotoBooth are more populare in weddings and social events than 
+  before, this photobooth works with dropbox wich is also populare by the youth today and with our photobooth its is possible to further 
+  develop and customize the photobooth to your need. We hope that this will trigger new developers to get into open source and further 
+  develop the community
+
 
 ## Hardware
 1. Raspberry Pi 3 model B plus
