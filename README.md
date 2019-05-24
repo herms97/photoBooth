@@ -16,7 +16,7 @@
 4. [Installation](#Installation)
 5. [Setup](#Setup)
 6. [Tutorial](#tutorial)
-7. [About the project](#About the project)
+7. [About](#About)
 8. [License](#License)
 9. [Contribute](#Contribute)
 10. [Credits](#Credits)
@@ -166,7 +166,7 @@ To Run the program simply type in terminal: Python camera.py
 This will run the program, and then its you just have to follow the instruction on the screen, which is basiclly "press the arrowkey facing down" and to exit simply press "ESC" and it will stop the program.
   
    
-## About the project
+## About
 The Project started out as a fun schoolproject. Our task was to create something using open source methods, and quickly decided we wanted to make something fun to draw more people into the open source community.  We found Sabat54i tutorial and wanted to create something simulare. Since we didnt want to buy a printer and we wanted to share the photos to everyone at a party, event or another social gathering, we quickly decided to use cloud services so everyone using the device could get access to the photo. We searched around for an open source alternative, but found out after a while that using dropbox instead would be the easiest to use for users (since a large number allready uses dropbox) and it had tutorial (mentioned in Credits) that that wasnt to complicated for our group since it is our first time using python and developing code that is open source. Our project is ment for drawing more people into the "open source world",
 we were drawn ourself into open source by looking at small hobby projects as interactive mirrors, wheater forecast devices, raspberry pi and arduino projects. We think small fun projects will draw developers into open source and when the developers have started exploring the opportunities that open source brings they will likely/hopefully stay and help the community grow.
    
