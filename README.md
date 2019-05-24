@@ -15,11 +15,12 @@
 3. [Software](#Software)
 4. [Installation](#Installation)
 5. [Setup](#Setup)
-6. [Tutorial](#tutorial)
-7. [About](#About)
-8. [License](#License)
-9. [Contribute](#Contribute)
-10. [Credits](#Credits)
+6. [QR code generator](#QR code generator)
+7. [How to run the program](#How to run the program)
+8. [About](#About)
+9. [License](#License)
+10. [Contribute](#Contribute)
+11. [Credits](#Credits)
 
 ## Intent:
   Our intention with this project is to make a fun and easy to learn/use program that will drive more young people into the open source  
@@ -168,7 +169,7 @@ To create the QR code we used [this page.](https://www.the-qrcode-generator.com/
 The instructions of creating a QR code are pretty self explanatory, but you simply paste the link from the page you want to create a QR code from into the QR code generator page, click on generate and download the QR code that was generated.  
    
    
-## Tutorial
+## How to run the program
 To Run the program simply type in terminal: `python camera.py`
 This will run the program, and then its you just have to follow the instruction on the screen, which is basiclly "press the arrowkey facing down" and to exit simply press `ESC` and it will stop the program.
   
