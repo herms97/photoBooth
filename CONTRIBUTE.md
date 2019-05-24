@@ -66,7 +66,6 @@ The reviewer consist of the developers of PhotoBooth and we will look at the Pul
 * filipo17@student.uia.no
 
 ## Ideas to contribute
-- Use a printer instead of dropbox.
 - Use another storage cloud than dropbox(ex. Google Drive).
 - Use a real button / touchscreen, instead of keyboard.
 - Option between dropbox/print.
