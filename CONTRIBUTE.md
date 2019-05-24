@@ -71,6 +71,7 @@ The reviewer consist of the developers of PhotoBooth and we will look at the Pul
 - Use a real button / touchscreen, instead of keyboard.
 - Option between dropbox/print.
 - Default background filters to choose before image is captured. 
+- Name the files as you want, instead of random genereating filenames.
 
 
 ## Licence contributing
