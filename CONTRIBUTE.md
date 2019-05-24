@@ -63,7 +63,7 @@ The reviewer consist of the developers of PhotoBooth and we will look at the Pul
 * Roberz17@student.uia.no
 * hermaf17@student.uia.no
 
-### Licence contributing
+## Licence contributing
 By contributing, you agree that your contributions will be licensed under the 
 [MIT LICENCE](https://github.com/herms97/photoBooth/blob/master/LICENSE)
 
