@@ -15,8 +15,9 @@
 3. [Software](#Software)
 4. [Installation](#Installation)
 5. [Setup](#Setup)
-6. [License](#License)
-7. [Contribute](#Contribute)
+6. [Tutorial](#tutorial)
+7. [License](#License)
+8. [Contribute](#Contribute)
 
 
 ## Intent:
@@ -157,6 +158,12 @@ directly down to [setup](setup)
    
    ### Note:
    The program will run an exception if the path to your folder includes typos, or foloder do not exist. It is      also case sensitive so remember to type the path correctly.
+   
+   
+## Tutorial
+To Run the program simply type in terminal: Python camera.py
+This will run the program, and then its you just have to follow the instruction on the screen, which is basiclly "press the arrowkey facing down" and to exit simply press "ESC" and it will stop the program.
+  
    
    
 ## License
