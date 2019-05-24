@@ -162,8 +162,8 @@ directly down to [setup](setup)
    
    
 ## Tutorial
-To Run the program simply type in terminal: Python camera.py
-This will run the program, and then its you just have to follow the instruction on the screen, which is basiclly "press the arrowkey facing down" and to exit simply press "ESC" and it will stop the program.
+To Run the program simply type in terminal: `python camera.py`
+This will run the program, and then its you just have to follow the instruction on the screen, which is basiclly "press the arrowkey facing down" and to exit simply press `ESC` and it will stop the program.
   
    
 ## About
