@@ -85,7 +85,7 @@ directly down to [setup](setup)
    ### Note: 
    You may have pulled or cloned the project to a specific folder, make sure when changing directory that you        know where the dropbox-uploader is located.
       
-   Go into cmd (command window) and type:
+   Go into Terminal (command window) and type:
         
    `cd dropbox-uploader`
       
