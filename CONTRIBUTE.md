@@ -53,10 +53,10 @@ These are the points an issue should contain:
 * What category is the issues?(Look below)
 
 Categories on how crucial the bug/error is in ascending order:
-Trivial: (Nice to have) Minimal impact of the usefulness and functionality of the software.
+* **Trivial:** (Nice to have) Minimal impact of the usefulness and functionality of the software.
 (Unspecified): Major loss of functionality or impairment of use.
-Critical: Large-scale loss of functionality or impairment of use.
-Blocker: Harmful or unacceptable behavior. Have to fix
+* **Critical:** Large-scale loss of functionality or impairment of use.
+* **Blocker:** Harmful or unacceptable behavior. Have to fix
 
 ## Review process
 The reviewer consist of the developers of PhotoBooth and we will look at the Pull Request regularly. After a reviewer have looked issue, the response will be expected to be given as fast as possible. If there have been no response within a week or two, please contact us at mail:
@@ -64,6 +64,14 @@ The reviewer consist of the developers of PhotoBooth and we will look at the Pul
 * hermaf17@student.uia.no
 * haaksv17@student.uia.no
 * filipo17@student.uia.no
+
+## Ideas to contribute
+- Use printer instead of dropbox.
+- Use another storage cloud than dropbox(ex. Google Drive).
+- Use a real button / touchscreen, instead of keyboard.
+- Option between dropbox/print.
+- Default background filters to choose before image is captured. 
+
 
 ## Licence contributing
 By contributing, you agree that your contributions will be licensed under the 
