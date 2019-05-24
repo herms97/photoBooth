@@ -18,7 +18,7 @@
 6. [Tutorial](#tutorial)
 7. [License](#License)
 8. [Contribute](#Contribute)
-
+9. [Credits](#Credits)
 
 ## Intent:
   Our intention with this project is to make a fun and easy to learn/use program that will drive more young people into the open source  
@@ -181,6 +181,17 @@ The reason for licensing our project under the MIT license is that our project i
 
 
 
+## Credits
+This idea was inspired and built up of two projects.
+### We used theese two project as inspiration and built our own simulare project based on theire technincs
+
+### Project 1: https://github.com/sabat54i/photoboothdiy/blob/master/camera.py
+Project 1 is made by Anthony Sabatella (Github user: sabat54i). He made the photobooth printer that our project is built on.
+You can read more about his project here:https://www.hackster.io/sabat54i/wedding-photo-booth-with-raspberry-pi-1cea3a
+
+### project 2: https://github.com/andreafabrizi/Dropbox-Uploader
+Project 2 is made by Andrea Fabrizi (github user: andreafabrizi). He made the dropbox uploader (that we used for inspiration).
+You can read more about the dropbox uploader here: https://raspi.tv/2013/how-to-use-dropbox-with-raspberry-pi.
 
 
 
