@@ -66,11 +66,15 @@ The reviewer consist of the developers of PhotoBooth and we will look at the Pul
 * filipo17@student.uia.no
 
 ## Ideas to contribute
-- Use another storage cloud than dropbox(ex. Google Drive).
+- Use another storage cloud than dropbox(ex. Google Drive) or you can use an open source cloud solution.
 - Use a real button / touchscreen, instead of keyboard.
 - Option between dropbox/print.
+- A solution that both prints and saves pictures to cloud.
 - Default background filters to choose before image is captured. 
+- Background generator, a generator that will switch between several backgrounds.
 - Name the files as you want, instead of random generating filenames.
+- Muliple screen solution, where the pictures are shown in a slide/random order on one screen while the other runs the photobooth.
+- Use email to send photos to chosen email after all photos are done.
 
 
 ## Licence contributing
