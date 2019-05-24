@@ -160,6 +160,13 @@ directly down to [setup](setup)
    ### Note:
    The program will run an exception if the path to your folder includes typos, or foloder do not exist. It is      also case sensitive so remember to type the path correctly.
    
+## QR code generator
+To access the pictures uploaded to dropbox more easily we created a QR code that will appear in the end of the photobooth program. This is so that users can scan the QR code with their phone and then find the pictures taken with the photo booth in a fast and simple way.
+
+To create the QR code we used [this page.](https://www.the-qrcode-generator.com/)
+
+The instructions of creating a QR code are pretty self explanatory, but you simply paste the link from the page you want to create a QR code from into the QR code generator page, click on generate and download the QR code that was generated.  
+   
    
 ## Tutorial
 To Run the program simply type in terminal: `python camera.py`
