@@ -10,9 +10,7 @@ Please read and follow the instructions carefully and thoroughly if you want to 
 Pull request are the best way to propose any changes. We actively welcome any pull request:
 1. Fork the repo and create your branch from master.
 1. Make sure your contribution meets our standards, and guidelines.
-1. If you have added any code that should be tested, add tests.
 1. Update the readme.md file with updated details of what change you have done.
-1. Increase the number behind the readme file. So first time put v1 and 2nd put v2 etc..
 1. Issue that pull request!
 
 ## Contribution Process
