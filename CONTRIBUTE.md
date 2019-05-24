@@ -22,8 +22,13 @@ https://github.com/herms97/photoBooth
 ## Roles
 In this documentation there are references to two different kind of roles. These two roles are:
 1. Contributor: The individual who has made changes to files in the repository, and wants to submit them for evaluation
-2. Reviewer - The individual who reviews changes to files before and follow the standard and guidelines.
+1. Reviewer - The individual who reviews changes to files before and follow the standard and guidelines.
 This individual also are able to perform the task of merging these files.
+
+## Branches
+There are two basic types of branches included in this repository:
+1. Master branch
+2. Issue branches
 
 ### Standards
 When contributing to Photobooth, there are some standards to follow. 
