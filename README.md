@@ -85,7 +85,7 @@ directly down to [setup](setup)
    
 2. Locate the folder called ‘dropbox-uploader’ that should be included when pulling / cloning from our github.
    ### Note: 
-   You may have pulled or cloned the project to a specific folder, make sure when changing directory that you        know where the dropbox-uploader is located.
+   You may have pulled or cloned the project to a specific folder, make sure when changing directory that you know where the dropbox-uploader is located.
       
    Go into Terminal (command window) and type:
         
@@ -170,7 +170,7 @@ The instructions of creating a QR code are pretty self explanatory, but you simp
    
    
 ## How to run the program
-To Run the program simply type in terminal: `python camera.py`
+To Run the program simply type in terminal: `python camera.py` (Make sure you're in the right folder/path)
 This will run the program, and then its you just have to follow the instruction on the screen, which is basiclly "press the arrowkey facing down" and to exit simply press `ESC` and it will stop the program.
   
    
@@ -197,7 +197,7 @@ The reason for licensing our project under the MIT license is that our project i
 
 ## Credits
 This idea was inspired and built up of two projects.
-### We used theese two project as inspiration and built our own simulare project based on theire technincs
+### We used theese two project as inspiration and built our own similar project based on theire technincs
 
 ### Project 1: https://github.com/sabat54i/photoboothdiy/blob/master/camera.py
 Project 1 is made by Anthony Sabatella (Github user: sabat54i). He made the photobooth printer that our project is built on.
