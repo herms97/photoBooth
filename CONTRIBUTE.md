@@ -62,6 +62,8 @@ Blocker: Harmful or unacceptable behavior. Have to fix
 The reviewer consist of the developers of PhotoBooth and we will look at the Pull Request regularly. After a reviewer have looked issue, the response will be expected to be given as fast as possible. If there have been no response within a week or two, please contact us at mail:
 * Roberz17@student.uia.no
 * hermaf17@student.uia.no
+* haaksv17@student.uia.no
+* filipo17@student.uia.no
 
 ## Licence contributing
 By contributing, you agree that your contributions will be licensed under the 
