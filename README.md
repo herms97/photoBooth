@@ -186,12 +186,13 @@ Collection of licenses that applies to this project.
 ### Our license
 [Licensed under the MIT license](https://github.com/herms97/photoBooth/blob/master/LICENSE)
 
-The reason for licensing our project under the MIT license is that our project is based on other open source projects and that we want our project to be open for others to use. We want this project to be open so that others can contribute or use it as they like. The MIT license is therefore a good fit because it is very open for every kind of use, but doesn’t guarantee any kind of warranty or liability which we don’t have the resources for or can guarantee.
+The reason for licensing our project under the MIT license is that our project is based on other open source projects and that we want our project to be open for others to use. We want this project to be open so that others can contribute or use it as they like. The MIT license is therefore a good fit because it is very open for every kind of use, but doesn’t guarantee any kind of warranty or liability which we don’t have the resources for or can guarantee in any way.
 
 ### 3rd party licenses
 [PyGame is licensed under the LGPL 3.0 license](https://opensource.org/licenses/lgpl-3.0.html)\
 [PiCamera is licensed under the LGPL 3.0 license](https://opensource.org/licenses/lgpl-3.0.html)\
 [Python 2.2 and above is licensed under the LGPL 3.0 license](https://opensource.org/licenses/lgpl-3.0.html)
+[The dropbox uploader we used for inspiration is licensed under the LGPL 3.0 license](https://opensource.org/licenses/lgpl-3.0.html)
 
 
 
