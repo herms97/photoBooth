@@ -115,25 +115,25 @@ directly down to [setup](setup)
 
 5. Click create app, and fill out:
 
-   ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_7.png)
-   ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_8.png)
+   ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_7.png)
+   ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_8.png)
    
 6.  When you have given a name and created your app, you should be able to see this when you scroll down:
     
-    ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_5.png)
+    ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_5.png)
     
     Click on the generate button, then your access token will be displayed.
     
-    ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_6.png)
+    ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_6.png)
     
 7.  Type in the generated access token in the input field, hit enter, then type y and enter again to confirm:
     
-     ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_9.png)
+     ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_9.png)
     
     ### If you entered the correct token you are done setting up your dropbox!
     
     If you unfortunately entered wrong token, you can simply run the script `./dropbox_uploader.sh` again, then this will show up:
-    ![Alt text]( https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/startover_dropboxcmd.png)
+    ![Alt text]( https://github.com/herms97/photoBooth/blob/master/picturefiles/startover_dropboxcmd.png)
     
     It will list several commands, make sure you type `./dropbox_uploader.sh unlink`. Then you will get this         message: make sure to type `y` (if you want to reset) then hit enter. Now if you type `./dropbox_uploader.sh`     you will see the same as shown in the previous picture. Just make sure to type in the correct access token.
     
@@ -144,15 +144,15 @@ directly down to [setup](setup)
 
 1. To upload images to your wanted folder, open up the python file camera.py included in the photoBooth folder.
 
-   ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_2.png)
+   ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_2.png)
    
 2. Scroll down to line 364, as you can see on the left side. If code-line option is not turned on, press `ctrl+f`    on windows or `cmd+f` on mac to open up the search bar inside your IDE and simply enter `command`. 
 
-   ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_3.png)
+   ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_3.png)
   
    You should then easy locate this line of code:
   
-   ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_1.png)
+   ![Alt text](https://github.com/herms97/photoBooth/blob/master/picturefiles/Screenshot_1.png)
 
 3. On line 364, as seen in the screenshot from our code, you can see behind `+ Dropbox_var +` the folder for        where the image is uploaded to the dropbox. In our code we have `/Apps/PythonUploader/` because this is the      folder where we wanted to upload our pictures.
 
