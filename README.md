@@ -21,6 +21,7 @@
 9. [License](#License)
 10. [Contribute](#Contribute)
 11. [Credits](#Credits)
+12. [More](#More)
 
 ## Intent:
   Our intention with this project is to make a fun and easy to learn/use program that will drive more young people into the open source  
@@ -109,9 +110,9 @@ directly down to [setup](setup)
       
    ![Alt text](https://github.com/herms97/photoBooth/blob/testMasterXXX/picturefiles/Screenshot_9.png)
     
-3. You need to create an account at DropBox - you do not have to pay for an account, do not worry.
+3. You need to create an account at [DropBox](https://www.dropbox.com/) - you do not have to pay for an account, do not worry.
 
-4. Now you have to create an app, where you can get an access token (connect your dropbox app folder to the          script). Click here to create dropbox app
+4. Now you have to create an app, where you can get an access token (connect your DropBox app folder to the          script). [Click here](https://www.dropbox.com/developers/apps) to create dropbox app.
 
 5. Click create app, and fill out:
 
@@ -210,4 +211,5 @@ You can read more about the dropbox uploader here: https://raspi.tv/2013/how-to-
 
 
 
-
+## More
+For more, checkout our [wiki page.](https://github.com/herms97/photoBooth/wiki)
